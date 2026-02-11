@@ -17,6 +17,8 @@ int main(int argc, char* argv[]) {
       You.heal();
   }
   
+  s
+
 }//call des for A
   
   
