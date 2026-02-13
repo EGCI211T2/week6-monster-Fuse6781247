@@ -4,7 +4,7 @@
 class Thanos {
 private:
 	int stones;
-	int hp; 
+	int hp;  //extra hp
 public:
 	/* constructor and destructor */
 	void snap_finger(monster[]); 
@@ -12,4 +12,5 @@ public:
 	/ clear half of monster hp, if stone =6*/
 	void operator++(); // increase the stone;
 };
+
 #endif
