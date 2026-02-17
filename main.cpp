@@ -12,19 +12,14 @@ int main(int argc, char* argv[]) {
     B+=10;//B.operator+=(10);
     --A;// A.operator--();
 
-    
-
     cout<<"===The stronger Monster is===\n";
     if(A>B) {
       A.display(); //A>B-->A--B>A.operator>()
-      
     }
     else{
       B.display();
-
     }
 
- 
     /* // delete it here 
 
     B.display();
@@ -39,11 +34,10 @@ int main(int argc, char* argv[]) {
     delete p;
 
     p = new monster[3];
-   delete [] p;
+    delete [] p;
     p = new monster(50,2);
     p->display();
     delete p;
-    
 
    /*
  
@@ -57,4 +51,34 @@ int main(int argc, char* argv[]) {
 
 */
 
+    // ==========================================
+    // START OF NEW TASK (Thanos Section)
+    // ==========================================
+    
+    Thanos T;
+    int n;
+    cout << "How many monsters? ";
+    cin >> n;
+    monster *m = new monster[n]; // make sure they have hp
+
+    /* Add some story */
+    ++T;
+    ++T;
+    T.snap_finger(m,n);
+    
+    ++T;
+    ++T;
+    T.snap_finger(m,n);
+    
+    ++T;
+    ++T;
+    T.snap_finger(m,n); // Clear hp n/2 (half) of the monster because stones reach 6
+    
+    int i;
+    for(i=0; i<n; i++)
+        m[i].display(); // If the hp=0, you do not display -> you will see only n/2 monster
+    
+    delete [] m;
+
+    return 0;
 }
