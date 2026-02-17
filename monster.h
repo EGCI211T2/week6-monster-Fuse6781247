@@ -1,7 +1,7 @@
 #ifndef monster_h
 #define monster_h
 #include <iostream>
-#include <string> // เพิ่มเพื่อให้ใช้ string ได้ไม่ error
+#include <string> // 
 using namespace std;
 
 class monster{
@@ -11,7 +11,7 @@ private:
 public:
     void Attack(monster &);
     void heal();
-    monster(string =" fuse ", int=10,int=1); // ปรับ default HP เป็น 10 ไม่ให้เป็น 0
+    monster(string =" fuse ", int=10,int=1); 
     ~monster();
     monster(int, int);
     
